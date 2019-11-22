@@ -111,8 +111,6 @@ Imagine that you go to a cafe to order a drink and then next week you back, the 
 
 We will be using a library called `express-session` to create the session store. Then we will use middleware to create a session for the user in our server and send back a `cookie` that will be stored to the browser with a `session id`.
 
-![sessions](images/session.png)
-
 Go ahead and install the library in our project by running the terminal command
 
 ```bash
@@ -207,11 +205,7 @@ Basic authentication is an authentication scheme that's built into http requests
 
 Credentials are `encoded` and sent through the header of the http request.
 
-![basic auth](images/basicauth.png)
-
 `encoding` is where we transform data into another format using a publicly available scheme and is easily reversible. All you need to decode the encoding is by using the algorithim used to encode it.
-
-![encoding](images/encoding.png)
 
 Basic authentication provides no confidentiality to the transmitted credentials, so if someone were to intercept the transmitted data, it would be insanely easy to decode.
 
@@ -251,8 +245,6 @@ Hashing is another way that we can protect data. We will `hash` user passwords b
 
 Hashed passwords will become a random string of characters that are intended to never be un-hashed.
 
-![hashed pattern](images/hashed.png)
-
 A hash is pretty much impossible to reverse enginer and un-hash. This provides another very strong layer of security.
 
 We will be storing the `hashed` passwords into our database.
@@ -264,8 +256,6 @@ When we recieve the same input from a user and run the same hash algorithm on it
 When we are hashing our passwords, we also want to add a `salt`. This will add some more complexity to the security layer to create an even more secure way to store passwords.
 
 The salt is just another set of characters that are completely random that will make the hashed string even more secure.
-
-![salt pattern](images/salt.png)
 
 ### Bcrypt
 
