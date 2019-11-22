@@ -1,0 +1,25 @@
+{
+  "name": "node-four-webdev-v3",
+  "version": "1.0.0",
+  "description": "In this lecture we talk about middleware, cookies, sessions, and authentication.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattcbodily/node-four-webdev-v3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattcbodily/node-four-webdev-v3/issues"
+  },
+  "homepage": "https://github.com/mattcbodily/node-four-webdev-v3#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0"
+  }
+}
