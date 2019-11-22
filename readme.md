@@ -109,6 +109,8 @@ Imagine that you go to a cafe to order a drink and then next week you back, the 
 
 * The information keeping track of your id and others id will be the session
 
+![session](images/session.png)
+
 We will be using a library called `express-session` to create the session store. Then we will use middleware to create a session for the user in our server and send back a `cookie` that will be stored to the browser with a `session id`.
 
 Go ahead and install the library in our project by running the terminal command
