@@ -205,7 +205,11 @@ Basic authentication is an authentication scheme that's built into http requests
 
 Credentials are `encoded` and sent through the header of the http request.
 
+![basic auth](images/basicauth.png)
+
 `encoding` is where we transform data into another format using a publicly available scheme and is easily reversible. All you need to decode the encoding is by using the algorithim used to encode it.
+
+![encoding](images/encoding.png)
 
 Basic authentication provides no confidentiality to the transmitted credentials, so if someone were to intercept the transmitted data, it would be insanely easy to decode.
 
@@ -245,6 +249,8 @@ Hashing is another way that we can protect data. We will `hash` user passwords b
 
 Hashed passwords will become a random string of characters that are intended to never be un-hashed.
 
+![hashed pattern](images/hashed.png)
+
 A hash is pretty much impossible to reverse enginer and un-hash. This provides another very strong layer of security.
 
 We will be storing the `hashed` passwords into our database.
@@ -260,6 +266,8 @@ The salt is just another set of characters that are completely random that will 
 ### Bcrypt
 
 We will be using `bcrypt` to generate the hashed and salted passwords. Bcrypt is an awesome library that we can use to increase the security in our applications.
+
+![salt pattern](images/salt.png)
 
 #### Create A Hashed Password
 
