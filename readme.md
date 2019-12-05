@@ -2,6 +2,10 @@
 
 In this lecture we talk about middleware, cookies, sessions, and authentication.
 
+## Lecture Slides
+
+https://slides.com/mattbodily/deck-17cb18
+
 ## Middleware
 
 A middleware function is a function that is executed between an endpoint being hit and the handler function that sends a response. They will act like the `middle man` in our requests.
